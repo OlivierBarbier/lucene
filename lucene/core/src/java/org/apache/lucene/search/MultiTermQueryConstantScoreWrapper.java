@@ -125,7 +125,7 @@ final class MultiTermQueryConstantScoreWrapper<Q extends MultiTermQuery> extends
     return new ConstantScoreWeight(this, boost) {
 
       /**
-       * Try to collect terms from the given terms enum and return true iff all terms could be
+       * Try to collect terms from the given terms enum and return true if all terms could be
        * collected. If {@code false} is returned, the enum is left positioned on the next term.
        */
       private boolean collectTerms(
